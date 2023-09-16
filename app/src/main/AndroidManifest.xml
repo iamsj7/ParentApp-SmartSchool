@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shaikjaleel.schoolx">
+
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission
+        android:name="android.permission.CALL_PHONE"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="false" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:name="com.shaikjaleel.schoolx.utils.MyApp"
+        android:allowBackup="false"
+        android:configChanges="orientation|screenSize"
+        android:exported="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.CbseExaminationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.CbseTimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOfflinePayment"
+            android:exported="false" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.BehaviourComment"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentVideoTutorialPlay"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentHomeworkNew"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.NewDashboard"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentCoursePerformance"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentUploadDocument"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentDailyAssignment"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentProcessingFees"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentCourseDetail"
+            android:configChanges="orientation|keyboardHidden|screenSize|layoutDirection"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOnlineCourse"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentStartLessonActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize|layoutDirection|uiMode"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentLiveClasses"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOfflinePaymentList"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentGmeetLiveClasses"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentBehaviourReport"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.NotificationList"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOnlineExamQuestionsNew"
+            android:configChanges="orientation|screenSize"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOnlineExamResult"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOnlineExam"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.AboutSchool"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentTimeline"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentAddTimeLine"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentEditTimeLine"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentDocuments"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.shaikjaleel.schoolx.Login"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentProfileDetailsNew"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentAddAssignment"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentEditAssignment"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentUploadHomework"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.ForgotPassword"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.BaseActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentFees"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentNoticeBoard"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentExaminationList"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentReportCard_ExamListResult"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentSubjectList"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentTeachersList"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentTransportRoutes"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentDownloads"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentAttendance"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentReportCard_ExamList"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentExamSchedule_ExamList"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentExamSchedule"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentVisitorBook"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentHostel"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentLibraryBook"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentClassTimetable"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentSyllabusTimetable"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentSyllabusStatus"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentLibraryBookIssued"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentAppyLeave"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentAddLeave"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentEditLeave"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentSyllabus"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOnlineQuizResult"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentSyllabuslesson"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentOnlineCourseQuiz"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.SettingActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.TakeUrl"
+            android:configChanges="orientation|screenSize"
+            android:exported="false" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.OpenPdf"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentTasks"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.StudentTasksEdit"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.Payment"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.CoursePayment"
+            android:exported="true" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.CourseVideoPlay"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name="com.shaikjaleel.schoolx.students.LiveClasses"
+            android:exported="false" />
+
+        <service
+            android:name="com.shaikjaleel.schoolx.utils.MyFirebaseMessagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

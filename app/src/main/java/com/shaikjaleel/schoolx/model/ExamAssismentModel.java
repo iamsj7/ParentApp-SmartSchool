@@ -1,0 +1,30 @@
+package com.shaikjaleel.schoolx.model;
+
+public class ExamAssismentModel {
+
+    public String getCbse_exam_assessment_type_name() {
+        return cbse_exam_assessment_type_name;
+    }
+
+    public void setCbse_exam_assessment_type_name(String cbse_exam_assessment_type_name) {
+        this.cbse_exam_assessment_type_name = cbse_exam_assessment_type_name;
+    }
+
+    public String getMarks() {
+        return marks;
+    }
+
+    public void setMarks(String marks) {
+        this.marks = marks;
+    }
+
+    private String cbse_exam_assessment_type_name;
+    private String marks;
+
+
+
+
+
+
+
+}
